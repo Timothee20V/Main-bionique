@@ -12,6 +12,8 @@
 #include "stm32f1_gpio.h"
 #include "macro_types.h"
 #include "systick.h"
+#include "servo.h"
+#include "stm32f1_adc.h"
 
 void writeLED(bool_e b)
 {
@@ -54,10 +56,18 @@ int main(void)
 	//On ajoute la fonction process_ms à la liste des fonctions appelées automatiquement chaque ms par la routine d'interruption du périphérique SYSTICK
 	Systick_add_callback_function(&process_ms);
 
+
+
+
+	SERVO_init();
+	ADC_init();
+
+
 	while(1)	//boucle de tâche de fond
 	{
-		SERVO_init();
-		SERVO_set_position(200);
+		n = ADC_getValue(ADC_CHANNEL_10)
+		print(n);
+		}
 
 	}
 }

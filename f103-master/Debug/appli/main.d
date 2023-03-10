@@ -25,7 +25,8 @@ appli/main.o: ../appli/main.c ../lib/hal/inc/stm32f1xx_hal.h \
  ../lib/hal/inc/stm32f1xx_hal_hcd.h ../lib/bsp/stm32f1_uart.h \
  ../lib/bsp/macro_types.h ../appli/config.h ../lib/bsp/stm32f1_sys.h \
  ../lib/bsp/stm32f1_uart.h ../lib/bsp/stm32f1_gpio.h \
- ../lib/bsp/macro_types.h ../lib/bsp/systick.h
+ ../lib/bsp/macro_types.h ../lib/bsp/systick.h ../appli/servo.h \
+ ../lib/bsp/stm32f1_adc.h
 
 ../lib/hal/inc/stm32f1xx_hal.h:
 
@@ -128,3 +129,7 @@ appli/main.o: ../appli/main.c ../lib/hal/inc/stm32f1xx_hal.h \
 ../lib/bsp/macro_types.h:
 
 ../lib/bsp/systick.h:
+
+../appli/servo.h:
+
+../lib/bsp/stm32f1_adc.h:
