@@ -2,7 +2,7 @@
  * SERVO.h
  *
  *  Created on: 28 mars 2019
- *      Author: Nirgal
+ *      Author: Clemence
  */
 
 
