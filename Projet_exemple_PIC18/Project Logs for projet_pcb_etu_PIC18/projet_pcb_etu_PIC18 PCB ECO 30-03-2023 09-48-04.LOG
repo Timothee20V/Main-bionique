@@ -1,0 +1,217 @@
+Removed Pin From Net: NetName=+3V3 Pin=Cdt-1
+Removed Pin From Net: NetName=GND Pin=Cdt-2
+Removed Pin From Net: NetName=NetCfIR_1 Pin=CfIR-1
+Removed Pin From Net: NetName=GND Pin=CfIR-2
+Removed Pin From Net: NetName=AN0 Pin=Cft-1
+Removed Pin From Net: NetName=GND Pin=Cft-2
+Removed Pin From Net: NetName=KYBD_IN0 Pin=CL1-1
+Removed Pin From Net: NetName=KYBD_IN1 Pin=CL1-2
+Removed Pin From Net: NetName=KYBD_IN2 Pin=CL1-3
+Removed Pin From Net: NetName=KYBD_IN3 Pin=CL1-4
+Removed Pin From Net: NetName=KYBD_OUT0 Pin=CL1-5
+Removed Pin From Net: NetName=KYBD_OUT1 Pin=CL1-6
+Removed Pin From Net: NetName=KYBD_OUT2 Pin=CL1-7
+Removed Pin From Net: NetName=KYBD_OUT3 Pin=CL1-8
+Removed Pin From Net: NetName=+5V Pin=Cout1-1
+Removed Pin From Net: NetName=GND Pin=Cout1-2
+Removed Pin From Net: NetName=GND Pin=Cout2-1
+Removed Pin From Net: NetName=+5V Pin=Cout2-2
+Removed Pin From Net: NetName=GND Pin=Cout3-1
+Removed Pin From Net: NetName=+3V3 Pin=Cout3-2
+Removed Pin From Net: NetName=VCC Pin=J1-1
+Removed Pin From Net: NetName=GND Pin=J1-3
+Removed Pin From Net: NetName=NetJcharge3_1 Pin=Jcharge3-1
+Removed Pin From Net: NetName=GND Pin=Jcharge3-2
+Removed Pin From Net: NetName=GRILLEMOS3 Pin=QpMOS-1
+Removed Pin From Net: NetName=+3V3 Pin=QpMOS-2
+Removed Pin From Net: NetName=NetJcharge3_1 Pin=QpMOS-3
+Removed Pin From Net: NetName=NetCfIR_1 Pin=RfIR-1
+Removed Pin From Net: NetName=+3V3 Pin=RfIR-2
+Removed Pin From Net: NetName=AN0 Pin=Rft-2
+Removed Pin From Net: NetName=KYBD_IN0 Pin=Rk0-1
+Removed Pin From Net: NetName=+3V3 Pin=Rk0-2
+Removed Pin From Net: NetName=KYBD_IN1 Pin=Rk1-1
+Removed Pin From Net: NetName=+3V3 Pin=Rk1-2
+Removed Pin From Net: NetName=KYBD_IN2 Pin=Rk2-1
+Removed Pin From Net: NetName=+3V3 Pin=Rk2-2
+Removed Pin From Net: NetName=KYBD_IN3 Pin=Rk3-1
+Removed Pin From Net: NetName=+3V3 Pin=Rk3-2
+Removed Pin From Net: NetName=INT0 Pin=RpuIR-1
+Removed Pin From Net: NetName=+3V3 Pin=RpuIR-2
+Removed Pin From Net: NetName=GRILLEMOS3 Pin=RpullMosP-1
+Removed Pin From Net: NetName=+3V3 Pin=RpullMosP-2
+Removed Pin From Net: NetName=INT0 Pin=U_IR-1
+Removed Pin From Net: NetName=NetCfIR_1 Pin=U_IR-2
+Removed Pin From Net: NetName=GND Pin=U_IR-3
+Removed Pin From Net: NetName=GRILLEMOS2 Pin=U_PIC18-16
+Removed Pin From Net: NetName=GRILLEMOS1 Pin=U_PIC18-17
+Removed Pin From Net: NetName=GRILLEMOS3 Pin=U_PIC18-24
+Removed Pin From Net: NetName=LCD_DATA0 Pin=U_PIC18-27
+Removed Pin From Net: NetName=LCD_DATA1 Pin=U_PIC18-28
+Removed Pin From Net: NetName=LCD_DATA2 Pin=U_PIC18-29
+Removed Pin From Net: NetName=LCD_DATA3 Pin=U_PIC18-30
+Removed Pin From Net: NetName=+3V3 Pin=Utemp-1
+Removed Pin From Net: NetName=GND Pin=Utemp-3
+Removed Member From Class: ClassName=projet_pcb_etu_formatA3 Member=Cdt
+Removed Member From Class: ClassName=projet_pcb_etu_formatA3 Member=CfIR
+Removed Member From Class: ClassName=projet_pcb_etu_formatA3 Member=Cft
+Removed Member From Class: ClassName=projet_pcb_etu_formatA3 Member=CL1
+Removed Member From Class: ClassName=projet_pcb_etu_formatA3 Member=Cout1
+Removed Member From Class: ClassName=projet_pcb_etu_formatA3 Member=Cout2
+Removed Member From Class: ClassName=projet_pcb_etu_formatA3 Member=Cout3
+Removed Member From Class: ClassName=projet_pcb_etu_formatA3 Member=J1
+Removed Member From Class: ClassName=projet_pcb_etu_formatA3 Member=Jcharge3
+Removed Member From Class: ClassName=projet_pcb_etu_formatA3 Member=QpMOS
+Removed Member From Class: ClassName=projet_pcb_etu_formatA3 Member=RfIR
+Removed Member From Class: ClassName=projet_pcb_etu_formatA3 Member=Rft
+Removed Member From Class: ClassName=projet_pcb_etu_formatA3 Member=Rk0
+Removed Member From Class: ClassName=projet_pcb_etu_formatA3 Member=Rk1
+Removed Member From Class: ClassName=projet_pcb_etu_formatA3 Member=Rk2
+Removed Member From Class: ClassName=projet_pcb_etu_formatA3 Member=Rk3
+Removed Member From Class: ClassName=projet_pcb_etu_formatA3 Member=RpuIR
+Removed Member From Class: ClassName=projet_pcb_etu_formatA3 Member=RpullMosP
+Removed Member From Class: ClassName=projet_pcb_etu_formatA3 Member=U_IR
+Removed Member From Class: ClassName=projet_pcb_etu_formatA3 Member=Utemp
+Change Footprint: Footprint Not Found DOUILLE_BANANE_4mm
+Change Footprint: Footprint Not Found DOUILLE_BANANE_4mm
+Change Component Comment : Designator=J_GND Old Comment=DOUILLE BANANE 4mm COUDEE New Comment=DOUILLE BANANE 4mm
+Change Component Comment : Designator=J_VCC Old Comment=DOUILLE BANANE 4mm COUDEE New Comment=DOUILLE BANANE 4mm
+Change component parameters: Designator = "AF1" ("AF1"); Footprint = "AFFICHEUR_LCD_MC1602C8-SYL"; UniqueID = "\FLNPFXPD" ("\FLNPFXPD")
+Change component parameters (AddParameter): Name = "Name"; Value = "MC1602C8-SYL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "LCD2X16_STN"; VariantName = "[No Variations]"
+Change component parameters: Designator = "CarBP" ("CarBP"); Footprint = "CONDENSATEUR_CERAMIQUE_RADIAL_5.08"; UniqueID = "\JSDILQJO" ("\JSDILQJO")
+Change component parameters (AddParameter): Name = "Type"; Value = "RADIAL_5.08"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Cd1" ("Cd1"); Footprint = "CONDENSATEUR_CERAMIQUE_RADIAL_5.08"; UniqueID = "\WXLVILLC" ("\WXLVILLC")
+Change component parameters (AddParameter): Name = "Type"; Value = "RADIAL_5.08"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10nF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Cd2" ("Cd2"); Footprint = "CONDENSATEUR_CERAMIQUE_RADIAL_5.08"; UniqueID = "\TLDYMACE" ("\TLDYMACE")
+Change component parameters (AddParameter): Name = "Type"; Value = "RADIAL_5.08"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10nF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Cin" ("Cin"); Footprint = "CONDENSATEUR_POLARISE_ELECTROLYTIQUE_RADIAL_2.0/5.08"; UniqueID = "\PQNGNAFQ" ("\PQNGNAFQ")
+Change component parameters (AddParameter): Name = "Type"; Value = "POL_RAD_2.0/5.08"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10µF/>25V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Cmot3" ("Cmot3"); Footprint = "CONDENSATEUR_POLARISE_ELECTROLYTIQUE_RADIAL_2.0/5.08"; UniqueID = "\WFUMRMRP" ("\WFUMRMRP")
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "RAD-0.3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Cq1" ("Cq1"); Footprint = "CONDENSATEUR_CERAMIQUE_RADIAL_5.08"; UniqueID = "\ONBCOGVI" ("\ONBCOGVI")
+Change component parameters (AddParameter): Name = "Type"; Value = "RADIAL_5.08"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "22pF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Cq2" ("Cq2"); Footprint = "CONDENSATEUR_CERAMIQUE_RADIAL_5.08"; UniqueID = "\NEKAAQCK" ("\NEKAAQCK")
+Change component parameters (AddParameter): Name = "Type"; Value = "RADIAL_5.08"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "22pF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "D2" ("D2"); Footprint = "LED_3MM"; UniqueID = "\YQNYJPRN" ("\YQNYJPRN")
+Change component parameters (AddParameter): Name = "Type"; Value = "LED_3mm"; VariantName = "[No Variations]"
+Change component parameters: Designator = "ICSP" ("ICSP"); Footprint = "BARRETTE_6_M_C"; UniqueID = "\CHCGQMUI" ("\CHCGQMUI")
+Change component parameters (AddParameter): Name = "Type"; Value = "M_C_6"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J_Capt" ("J_Capt"); Footprint = "BARRETTE_4_F_D"; UniqueID = "\WGPRLEGB" ("\WGPRLEGB")
+Change component parameters (AddParameter): Name = "Type"; Value = "F_D_4"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J_GND" ("J_GND"); Footprint = "DOUILLE_BANANE_4MM_COUDEE"; UniqueID = "\LNRWERRS" ("\LNRWERRS")
+Change component parameters (AddParameter): Name = "Type"; Value = "BANANE_4mm"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J_PSCE" ("J_PSCE"); Footprint = "DOUILLE_BANANE_4mm"; UniqueID = "\KUKTOUBO" ("\KUKTOUBO")
+Change component parameters (AddParameter): Name = "Type"; Value = "BANANE_4mm"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J_UART" ("J_UART"); Footprint = "BARRETTE_3_M_D"; UniqueID = "\ADINNARR" ("\ADINNARR")
+Change component parameters (AddParameter): Name = "Type"; Value = "M_D_3"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J_VCC" ("J_VCC"); Footprint = "DOUILLE_BANANE_4MM_COUDEE"; UniqueID = "\NFLGFRGI" ("\NFLGFRGI")
+Change component parameters (AddParameter): Name = "Type"; Value = "BANANE_4mm"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Jcharge" ("Jcharge"); Footprint = "BORNIER2_A_VIS"; UniqueID = "\MEUXFACJ" ("\MEUXFACJ")
+Change component parameters (AddParameter): Name = "Type"; Value = "BORNIER2_D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Jcharge2" ("Jcharge2"); Footprint = "BORNIER2_A_VIS"; UniqueID = "\CTRIXWMU" ("\CTRIXWMU")
+Change component parameters (AddParameter): Name = "Type"; Value = "BORNIER2_D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "MOT3" ("MOT3"); Footprint = "BORNIER2_A_VIS"; UniqueID = "\TLWWTOUO" ("\TLWWTOUO")
+Change component parameters (AddParameter): Name = "Type"; Value = "BORNIER2_D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Pot" ("Pot"); Footprint = "TRIMMER_MONOTOUR_PT10LV"; UniqueID = "\OLMJEKUU" ("\OLMJEKUU")
+Change component parameters (AddParameter): Name = "Type"; Value = "PT10LV"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1K"; VariantName = "[No Variations]"
+Change component parameters: Designator = "QnMOS1" ("QnMOS1"); Footprint = "TRANSISTOR_MOSFET-N_SOT23_GSD"; UniqueID = "\IKUYDXVB" ("\IKUYDXVB")
+Change component parameters (AddParameter): Name = "Package"; Value = "SOT23"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "TSM2312CX"; VariantName = "[No Variations]"
+Change component parameters: Designator = "QnMOS2" ("QnMOS2"); Footprint = "TRANSISTOR_MOSFET-N_TO220_GDS"; UniqueID = "\XMNBLJCQ" ("\XMNBLJCQ")
+Change component parameters (AddParameter): Name = "Package"; Value = "TO251-AA"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Rctrst" ("Rctrst"); Footprint = "RESISTANCE_1/4W"; UniqueID = "\PNTNMLGE" ("\PNTNMLGE")
+Change component parameters (AddParameter): Name = "Type"; Value = "1/4W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Rled" ("Rled"); Footprint = "RESISTANCE_1/4W"; UniqueID = "\MURRPQME" ("\MURRPQME")
+Change component parameters (AddParameter): Name = "Type"; Value = "1/4W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "150"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Rmclr" ("Rmclr"); Footprint = "RESISTANCE_1/4W"; UniqueID = "\FUPOLCWI" ("\FUPOLCWI")
+Change component parameters (AddParameter): Name = "Type"; Value = "1/4W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Change component parameters: Designator = "RpuBP" ("RpuBP"); Footprint = "RESISTANCE_1/4W"; UniqueID = "\GTFBWHAF" ("\GTFBWHAF")
+Change component parameters (AddParameter): Name = "Type"; Value = "1/4W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Change component parameters: Designator = "RpullMos1" ("RpullMos1"); Footprint = "RESISTANCE_1/4W"; UniqueID = "\BRQWBBER" ("\BRQWBBER")
+Change component parameters (AddParameter): Name = "Type"; Value = "1/4W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Change component parameters: Designator = "RpullMos2" ("RpullMos2"); Footprint = "RESISTANCE_1/4W"; UniqueID = "\YUCARUVQ" ("\YUCARUVQ")
+Change component parameters (AddParameter): Name = "Type"; Value = "1/4W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Rretro LCD" ("Rretro LCD"); Footprint = "RESISTANCE_1/4W"; UniqueID = "\VHOVNCBU" ("\VHOVNCBU")
+Change component parameters (AddParameter): Name = "Type"; Value = "1/4W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1K"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Rscl" ("Rscl"); Footprint = "RESISTANCE_1/4W"; UniqueID = "\QFPVFONH" ("\QFPVFONH")
+Change component parameters (AddParameter): Name = "Type"; Value = "1/4W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Rsda" ("Rsda"); Footprint = "RESISTANCE_1/4W"; UniqueID = "\OBYPEIOK" ("\OBYPEIOK")
+Change component parameters (AddParameter): Name = "Type"; Value = "1/4W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Sw1" ("Sw1"); Footprint = "BOUTON_POUSSE_PLAT_6x6"; UniqueID = "\JAWNKORU" ("\JAWNKORU")
+Change component parameters (AddParameter): Name = "Type"; Value = "B_POUSS_MINI_T"; VariantName = "[No Variations]"
+Change component parameters: Designator = "U3V3" ("U3V3"); Footprint = "REGULATEUR_TO220_78XX"; UniqueID = "\WCIWSNUQ" ("\WCIWSNUQ")
+Change component parameters (AddParameter): Name = "Package"; Value = "TO220"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "LF33CV"; VariantName = "[No Variations]"
+Change component parameters: Designator = "U5V" ("U5V"); Footprint = "REGULATEUR_TO220_78XX"; UniqueID = "\TSQSFDMI" ("\TSQSFDMI")
+Change component parameters (AddParameter): Name = "Package"; Value = "TO220"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "7805"; VariantName = "[No Variations]"
+Change component parameters: Designator = "U_PIC18" ("U_PIC18"); Footprint = "DIP40_PAS=2.54_LARG=15.24_LONG=52.5"; UniqueID = "\EKPPMLFX" ("\EKPPMLFX")
+Change component parameters (AddParameter): Name = "Package"; Value = "DIP40"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "PIC1845K20-E/P"; VariantName = "[No Variations]"
+Change component parameters: Designator = "U_RTC" ("U_RTC"); Footprint = "DIP8_PAS=2.54_LARG=7.62_LONG=10.9"; UniqueID = "\YFSFKFRA" ("\YFSFKFRA")
+Change component parameters (AddParameter): Name = "Package"; Value = "DIP8"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "DS1307"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Y1" ("Y1"); Footprint = "QUARTZ_HC_MINI_COUDE"; UniqueID = "\AAQDDIRM" ("\AAQDDIRM")
+Change component parameters (AddParameter): Name = "Type"; Value = "HC_MINI"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "32.768kHz"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Y2" ("Y2"); Footprint = "QUARTZ_DROIT_BP"; UniqueID = "\CXAIIOCL" ("\CXAIIOCL")
+Change component parameters (AddParameter): Name = "Type"; Value = "DROIT_BP"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "20MHz"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found CONDENSATEUR_CERAMIQUE_RADIAL_5.08
+Add Component: Footprint Not Found CONDENSATEUR_POLARISE_ELECTROLYTIQUE_RADIAL_2.0/5.08
+Add Component: Footprint Not Found CONDENSATEUR_POLARISE_ELECTROLYTIQUE_RADIAL_2.0/5.08
+Add Component: Footprint Not Found CONDENSATEUR_CERAMIQUE_RADIAL_5.08
+Add Component: Footprint Not Found DOUILLE_BANANE_4mm
+Add Component: Footprint Not Found BARRETTE_3_M_D
+Add Pin To Net: Unknown Pin: Pin C3V_1-1
+Add Pin To Net: Unknown Pin: Pin C3V_1-2
+Add Pin To Net: Unknown Pin: Pin C3V_2-1
+Add Pin To Net: Unknown Pin: Pin C3V_2-2
+Add Pin To Net: Unknown Pin: Pin C5V_1-1
+Add Pin To Net: Unknown Pin: Pin C5V_1-2
+Add Pin To Net: Unknown Pin: Pin C5V_2-1
+Add Pin To Net: Unknown Pin: Pin C5V_2-2
+Add Pin To Net: Unknown Pin: Pin J_5Vp-1
+Add Pin To Net: Unknown Pin: Pin J_servo-1
+Add Pin To Net: Unknown Pin: Pin J_servo-2
+Add Pin To Net: Unknown Pin: Pin J_servo-3
+Added Pin To Net: NetName=GRILLEMOS1 Pin=U_PIC18-8
+Added Pin To Net: NetName=GRILLEMOS2 Pin=U_PIC18-9
+Added Pin To Net: NetName=GRILLEMOS3 Pin=U_PIC18-10
+Added Pin To Net: NetName=NetCfIR_1 Pin=U_PIC18-16
+Added Pin To Net: NetName=LCD_DATA3 Pin=U_PIC18-27
+Added Pin To Net: NetName=LCD_DATA2 Pin=U_PIC18-28
+Added Pin To Net: NetName=LCD_DATA1 Pin=U_PIC18-29
+Added Pin To Net: NetName=LCD_DATA0 Pin=U_PIC18-30
+Change Net Name : Old Net Name=NetCfIR_1 New Net Name=servomoteur
+Change Net Name : Old Net Name=NetJcharge3_1 New Net Name=5V_p
+Change Class Name : Old Net Name=projet_pcb_etu_formatA3 New Net Name=projet_pcb_etu_PIC18
+Add Class Member: Failed to add class member : Component C3V_1 CONDENSATEUR_CER_RAD_5.08
+Add Class Member: Failed to add class member : Component C3V_2 CONDENSATEUR_POL_ELECTROLY_RAD_2.0/5.08
+Add Class Member: Failed to add class member : Component C5V_1 CONDENSATEUR_POL_ELECTROLY_RAD_2.0/5.08
+Add Class Member: Failed to add class member : Component C5V_2 CONDENSATEUR_CER_RAD_5.08
+Add Class Member: Failed to add class member : Component J_5Vp DOUILLE BANANE 4mm
+Add Class Member: Failed to add class member : Component J_servo BARRETTE 3 CONTACTS 1 RANGEE MALE DROITE
+Change Room Name: Old Name=projet_pcb_etu_formatA3 New Name=projet_pcb_etu_PIC18
+Change Room Scope: Old Scope=InComponentClass('projet_pcb_etu_formatA3') New Scope=InComponentClass('projet_pcb_etu_PIC18')
