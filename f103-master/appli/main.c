@@ -58,23 +58,16 @@ int main(void)
 
 
 
+
 	SERVO_init();
 	ADC_init();
-	HAL_StatusTypeDef HAL_ADC_Init(HAL_ADC_Init);
 
 
 	while(1)	//boucle de tâche de fond
 	{
-
-		if(readButton){
-			writeLED(TRUE);
-		}
-		else{
-			writeLED(FALSE);
+		n = ADC_getValue(ADC_CHANNEL_10)
+		print(n);
 		}
 
-			//SERVO_set_position(100);
 	}
-
 }
-

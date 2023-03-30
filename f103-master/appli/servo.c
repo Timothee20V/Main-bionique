@@ -1,8 +1,8 @@
 /*
- * servo.c
+ * secretary.c
  *
  *  Created on: 28 mars 2019
- *      Author: Clemence
+ *      Author: Nirgal
  */
 #include "servo.h"
 #include "config.h"
