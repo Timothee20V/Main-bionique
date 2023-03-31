@@ -61,22 +61,16 @@ int main(void)
 
 	SERVO_init();
 	ADC_init();
-	uint16_t compt = 0;
-
+	HAL_StatusTypeDef HAL_ADC_Init(HAL_ADC_Init);
 
 
 	while(1)	//boucle de t�che de fond
 	{
 
-		if(readButton() == 1){
+		if(readButton){
 			writeLED(TRUE);
-			/*compt = compt + 1;
-			SERVO_set_position(100 + compt*10);
-			if (compt == 100){
-				compt = 0;
-			}*/
 		}
 
-
+			//SERVO_set_position(100);
 	}
 }
