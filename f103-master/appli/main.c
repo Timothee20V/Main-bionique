@@ -36,15 +36,15 @@ void process_ms(void)
 int main(void)
 {
 	//Initialisation de la couche logicielle HAL (Hardware Abstraction Layer)
-	//Cette ligne doit rester la première étape de la fonction main().
+	//Cette ligne doit rester la premiï¿½re ï¿½tape de la fonction main().
 	HAL_Init();
 
-	//Initialisation de l'UART2 à la vitesse de 115200 bauds/secondes (92kbits/s) PA2 : Tx  | PA3 : Rx.
-		//Attention, les pins PA2 et PA3 ne sont pas reliées jusqu'au connecteur de la Nucleo.
-		//Ces broches sont redirigées vers la sonde de débogage, la liaison UART étant ensuite encapsulée sur l'USB vers le PC de développement.
+	//Initialisation de l'UART2 ï¿½ la vitesse de 115200 bauds/secondes (92kbits/s) PA2 : Tx  | PA3 : Rx.
+		//Attention, les pins PA2 et PA3 ne sont pas reliï¿½es jusqu'au connecteur de la Nucleo.
+		//Ces broches sont redirigï¿½es vers la sonde de dï¿½bogage, la liaison UART ï¿½tant ensuite encapsulï¿½e sur l'USB vers le PC de dï¿½veloppement.
 	UART_init(UART2_ID,115200);
 
-	//"Indique que les printf sortent vers le périphérique UART2."
+	//"Indique que les printf sortent vers le pï¿½riphï¿½rique UART2."
 	SYS_set_std_usart(UART2_ID, UART2_ID, UART2_ID);
 
 	//Initialisation du port de la led Verte (carte Nucleo)
@@ -53,7 +53,7 @@ int main(void)
 	//Initialisation du port du bouton bleu (carte Nucleo)
 	BSP_GPIO_PinCfg(BLUE_BUTTON_GPIO, BLUE_BUTTON_PIN, GPIO_MODE_INPUT,GPIO_PULLUP,GPIO_SPEED_FREQ_HIGH);
 
-	//On ajoute la fonction process_ms à la liste des fonctions appelées automatiquement chaque ms par la routine d'interruption du périphérique SYSTICK
+	//On ajoute la fonction process_ms ï¿½ la liste des fonctions appelï¿½es automatiquement chaque ms par la routine d'interruption du pï¿½riphï¿½rique SYSTICK
 	Systick_add_callback_function(&process_ms);
 
 
@@ -61,13 +61,22 @@ int main(void)
 
 	SERVO_init();
 	ADC_init();
+	uint16_t compt = 0;
 
 
-	while(1)	//boucle de tâche de fond
+
+	while(1)	//boucle de tï¿½che de fond
 	{
-		n = ADC_getValue(ADC_CHANNEL_10)
-		print(n);
+
+		if(readButton() == 1){
+			writeLED(TRUE);
+			/*compt = compt + 1;
+			SERVO_set_position(100 + compt*10);
+			if (compt == 100){
+				compt = 0;
+			}*/
 		}
+
 
 	}
 }
