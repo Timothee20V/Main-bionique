@@ -376,6 +376,9 @@ Discarded input sections
  .data          0x0000000000000000        0x0 ./appli/main.o
  .bss           0x0000000000000000        0x0 ./appli/main.o
 <<<<<<< d99da195a246e31ce4cc2423991c60bb57ffa08c
+<<<<<<< d99da195a246e31ce4cc2423991c60bb57ffa08c
+=======
+>>>>>>> Revert "Màj Software"
 <<<<<<< HEAD
 =======
  .text.writeLED
@@ -383,8 +386,11 @@ Discarded input sections
  .text.readButton
                 0x0000000000000000       0x24 ./appli/main.o
 >>>>>>> parent of d99da19... Màj Software
+<<<<<<< d99da195a246e31ce4cc2423991c60bb57ffa08c
 =======
 >>>>>>> Màj software
+=======
+>>>>>>> Revert "Màj Software"
  .debug_macro   0x0000000000000000      0xab4 ./appli/main.o
  .debug_macro   0x0000000000000000       0x22 ./appli/main.o
  .debug_macro   0x0000000000000000      0x103 ./appli/main.o
@@ -15763,6 +15769,9 @@ Discarded input sections
  .text.HAL_GPIO_DeInit
                 0x0000000000000000      0x178 ./lib/hal/src/stm32f1xx_hal_gpio.o
 <<<<<<< d99da195a246e31ce4cc2423991c60bb57ffa08c
+<<<<<<< d99da195a246e31ce4cc2423991c60bb57ffa08c
+=======
+>>>>>>> Revert "Màj Software"
 <<<<<<< HEAD
 =======
  .text.HAL_GPIO_ReadPin
@@ -15770,8 +15779,11 @@ Discarded input sections
  .text.HAL_GPIO_WritePin
                 0x0000000000000000       0x30 ./lib/hal/src/stm32f1xx_hal_gpio.o
 >>>>>>> parent of d99da19... Màj Software
+<<<<<<< d99da195a246e31ce4cc2423991c60bb57ffa08c
 =======
 >>>>>>> Màj software
+=======
+>>>>>>> Revert "Màj Software"
  .text.HAL_GPIO_TogglePin
                 0x0000000000000000       0x30 ./lib/hal/src/stm32f1xx_hal_gpio.o
  .text.HAL_GPIO_LockPin
@@ -22965,14 +22977,20 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
                 0x000000000800010c                . = ALIGN (0x4)
 
 <<<<<<< d99da195a246e31ce4cc2423991c60bb57ffa08c
+<<<<<<< d99da195a246e31ce4cc2423991c60bb57ffa08c
+=======
+>>>>>>> Revert "Màj Software"
 <<<<<<< HEAD
 .text           0x0000000008000110     0xbab0
 =======
 .text           0x0000000008000110     0xba48
 >>>>>>> parent of d99da19... Màj Software
+<<<<<<< d99da195a246e31ce4cc2423991c60bb57ffa08c
 =======
 .text           0x0000000008000110     0xbab0
 >>>>>>> Màj software
+=======
+>>>>>>> Revert "Màj Software"
                 0x0000000008000110                . = ALIGN (0x4)
  *(.text)
  .text          0x0000000008000110       0x40 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
@@ -24666,9 +24684,106 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .fini          0x000000000800bb50        0x8 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtn.o
                 0x000000000800bb58                . = ALIGN (0x4)
                 0x000000000800bb58                _etext = .
+<<<<<<< d99da195a246e31ce4cc2423991c60bb57ffa08c
 
 .vfp11_veneer   0x000000000800bb58        0x0
  .vfp11_veneer  0x000000000800bb58        0x0 linker stubs
+=======
+
+.vfp11_veneer   0x000000000800bb58        0x0
+ .vfp11_veneer  0x000000000800bb58        0x0 linker stubs
+
+.v4_bx          0x000000000800bb58        0x0
+ .v4_bx         0x000000000800bb58        0x0 linker stubs
+
+.iplt           0x000000000800bb58        0x0
+ .iplt          0x000000000800bb58        0x0 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
+
+.rodata         0x000000000800bb58      0x8fc
+                0x000000000800bb58                . = ALIGN (0x4)
+ *(.rodata)
+ .rodata        0x000000000800bb58       0x91 ./lib/bsp/stm32f1_adc.o
+ *fill*         0x000000000800bbe9        0x3 
+ .rodata        0x000000000800bbec      0x1e6 ./lib/bsp/stm32f1_sys.o
+ *fill*         0x000000000800bdd2        0x2 
+ .rodata        0x000000000800bdd4       0x61 ./lib/bsp/stm32f1_uart.o
+ *fill*         0x000000000800be35        0x3 
+ .rodata        0x000000000800be38      0x22a ./lib/bsp/stm32f1_weak_it.o
+ *fill*         0x000000000800c062        0x2 
+ .rodata        0x000000000800c064       0x10 ./lib/hal/src/stm32f1xx_hal_rcc.o
+ *(.rodata*)
+ .rodata.nvic_irq_array
+                0x000000000800c074        0x4 ./lib/bsp/stm32f1_timer.o
+ .rodata.nvic_irq_array
+                0x000000000800c078        0x3 ./lib/bsp/stm32f1_uart.o
+ *fill*         0x000000000800c07b        0x1 
+ .rodata.AHBPrescTable
+                0x000000000800c07c       0x10 ./lib/bsp/system_stm32f1xx.o
+                0x000000000800c07c                AHBPrescTable
+ .rodata.APBPrescTable
+                0x000000000800c08c        0x8 ./lib/bsp/system_stm32f1xx.o
+                0x000000000800c08c                APBPrescTable
+ .rodata._global_impure_ptr
+                0x000000000800c094        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-impure.o)
+                0x000000000800c094                _global_impure_ptr
+ .rodata._svfprintf_r.str1.1
+                0x000000000800c098       0x34 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-svfprintf.o)
+ .rodata.blanks.7335
+                0x000000000800c0cc       0x10 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-svfprintf.o)
+ .rodata.zeroes.7336
+                0x000000000800c0dc       0x10 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-svfprintf.o)
+ .rodata._vfprintf_r.str1.1
+                0x000000000800c0ec       0x34 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-vfprintf.o)
+ .rodata.blanks.7350
+                0x000000000800c0ec       0x10 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-vfprintf.o)
+ .rodata.zeroes.7351
+                0x000000000800c0fc       0x10 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-vfprintf.o)
+ .rodata._dtoa_r.str1.1
+                0x000000000800c10c       0x7d c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-dtoa.o)
+                                         0x7f (size before relaxing)
+ .rodata.__multadd.str1.1
+                0x000000000800c189       0x60 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-mprec.o)
+                                         0x71 (size before relaxing)
+ *fill*         0x000000000800c1e9        0x7 
+ .rodata.__mprec_bigtens
+                0x000000000800c1f0       0x28 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-mprec.o)
+                0x000000000800c1f0                __mprec_bigtens
+ .rodata.__mprec_tens
+                0x000000000800c218       0xc8 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-mprec.o)
+                0x000000000800c218                __mprec_tens
+ .rodata.p05.6123
+                0x000000000800c2e0        0xc c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-mprec.o)
+ .rodata._vfiprintf_r.str1.1
+                0x000000000800c2ec       0x22 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-vfiprintf.o)
+ .rodata.blanks.7328
+                0x000000000800c2ec       0x10 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-vfiprintf.o)
+ .rodata.zeroes.7329
+                0x000000000800c2fc       0x10 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-vfiprintf.o)
+ .rodata.__assert_func.str1.1
+                0x000000000800c30c       0x3c c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-assert.o)
+                                         0x3d (size before relaxing)
+ .rodata._setlocale_r.str1.1
+                0x000000000800c348        0x8 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-locale.o)
+                                          0x9 (size before relaxing)
+ .rodata.str1.1
+                0x000000000800c350        0x2 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-locale.o)
+ .rodata._ctype_
+                0x000000000800c352      0x101 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-ctype_.o)
+                0x000000000800c352                _ctype_
+                0x000000000800c454                . = ALIGN (0x4)
+ *fill*         0x000000000800c453        0x1 
+>>>>>>> parent of d99da19... Màj Software
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+<<<<<<< HEAD
+.ARM            0x000000000800c424        0x8
+                0x000000000800c424                __exidx_start = .
+ *(.ARM.exidx*)
+ .ARM.exidx     0x000000000800c424        0x8 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x000000000800c42c                __exidx_end = .
+>>>>>>> Revert "Màj Software"
 
 .v4_bx          0x000000000800bb58        0x0
  .v4_bx         0x000000000800bb58        0x0 linker stubs
@@ -25294,7 +25409,44 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
 =======
 
 .data           0x0000000020000000      0x9d8 load address 0x000000000800c438
+<<<<<<< d99da195a246e31ce4cc2423991c60bb57ffa08c
 >>>>>>> Màj software
+=======
+=======
+.ARM            0x000000000800c454        0x8
+                0x000000000800c454                __exidx_start = .
+ *(.ARM.exidx*)
+ .ARM.exidx     0x000000000800c454        0x8 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x000000000800c45c                __exidx_end = .
+
+.rel.dyn        0x000000000800c45c        0x0
+ .rel.iplt      0x000000000800c45c        0x0 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
+
+.preinit_array  0x000000000800c45c        0x0
+                0x000000000800c45c                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array*)
+                0x000000000800c45c                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x000000000800c45c        0x8
+                0x000000000800c45c                PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ .init_array.00000
+                0x000000000800c45c        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-__call_atexit.o)
+ *(.init_array*)
+ .init_array    0x000000000800c460        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x000000000800c464                PROVIDE (__init_array_end = .)
+
+.fini_array     0x000000000800c464        0x4
+                0x000000000800c464                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array*)
+ .fini_array    0x000000000800c464        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x000000000800c468                PROVIDE (__fini_array_end = .)
+                0x000000000800c468                _sidata = LOADADDR (.data)
+
+.data           0x0000000020000000      0x9d8 load address 0x000000000800c468
+>>>>>>> parent of d99da19... Màj Software
+>>>>>>> Revert "Màj Software"
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -25339,6 +25491,7 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
                 0x00000000200009d8                _edata = .
 
 <<<<<<< d99da195a246e31ce4cc2423991c60bb57ffa08c
+<<<<<<< d99da195a246e31ce4cc2423991c60bb57ffa08c
 <<<<<<< HEAD
 .igot.plt       0x00000000200009d8        0x0 load address 0x000000000800ce10
  .igot.plt      0x00000000200009d8        0x0 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
@@ -25353,12 +25506,25 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
 .bss            0x00000000200009d8      0x5e0 load address 0x000000000800ce40
 >>>>>>> parent of d99da19... Màj Software
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> Revert "Màj Software"
 .igot.plt       0x00000000200009d8        0x0 load address 0x000000000800ce10
  .igot.plt      0x00000000200009d8        0x0 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
                 0x00000000200009d8                . = ALIGN (0x4)
 
 .bss            0x00000000200009d8      0x5e0 load address 0x000000000800ce10
+<<<<<<< d99da195a246e31ce4cc2423991c60bb57ffa08c
 >>>>>>> Màj software
+=======
+=======
+.igot.plt       0x00000000200009d8        0x0 load address 0x000000000800ce40
+ .igot.plt      0x00000000200009d8        0x0 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x00000000200009d8                . = ALIGN (0x4)
+
+.bss            0x00000000200009d8      0x5e0 load address 0x000000000800ce40
+>>>>>>> parent of d99da19... Màj Software
+>>>>>>> Revert "Màj Software"
                 0x00000000200009d8                _sbss = .
                 0x00000000200009d8                __bss_start__ = _sbss
  *(.bss)
@@ -25444,6 +25610,7 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
 
 ._user_heap_stack
 <<<<<<< d99da195a246e31ce4cc2423991c60bb57ffa08c
+<<<<<<< d99da195a246e31ce4cc2423991c60bb57ffa08c
 <<<<<<< HEAD
                 0x0000000020000fb8      0x600 load address 0x000000000800ce10
 =======
@@ -25452,6 +25619,13 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
 =======
                 0x0000000020000fb8      0x600 load address 0x000000000800ce10
 >>>>>>> Màj software
+=======
+<<<<<<< HEAD
+                0x0000000020000fb8      0x600 load address 0x000000000800ce10
+=======
+                0x0000000020000fb8      0x600 load address 0x000000000800ce40
+>>>>>>> parent of d99da19... Màj Software
+>>>>>>> Revert "Màj Software"
                 0x0000000020000fb8                . = ALIGN (0x8)
                 0x0000000020000fb8                PROVIDE (end = .)
                 [!provide]                        PROVIDE (_end = .)
@@ -25857,9 +26031,13 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_macro   0x0000000000017434      0x266 ./lib/hal/src/stm32f1xx_hal_uart.o
 
 <<<<<<< d99da195a246e31ce4cc2423991c60bb57ffa08c
+<<<<<<< d99da195a246e31ce4cc2423991c60bb57ffa08c
 <<<<<<< HEAD
 =======
 >>>>>>> Màj software
+=======
+<<<<<<< HEAD
+>>>>>>> Revert "Màj Software"
 .debug_line     0x0000000000000000    0x122fd
  .debug_line    0x0000000000000000      0x9a2 ./appli/main.o
  .debug_line    0x00000000000009a2      0x92c ./appli/servo.o
@@ -25883,6 +26061,9 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_line    0x0000000000010a90     0x17d8 ./lib/hal/src/stm32f1xx_hal_uart.o
  .debug_line    0x0000000000012268       0x95 ./lib/startup_stm32f103xb.o
 <<<<<<< d99da195a246e31ce4cc2423991c60bb57ffa08c
+<<<<<<< d99da195a246e31ce4cc2423991c60bb57ffa08c
+=======
+>>>>>>> Revert "Màj Software"
 =======
 .debug_line     0x0000000000000000    0x122f7
  .debug_line    0x0000000000000000      0x99c ./appli/main.o
@@ -25907,8 +26088,11 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_line    0x0000000000010a8a     0x17d8 ./lib/hal/src/stm32f1xx_hal_uart.o
  .debug_line    0x0000000000012262       0x95 ./lib/startup_stm32f103xb.o
 >>>>>>> parent of d99da19... Màj Software
+<<<<<<< d99da195a246e31ce4cc2423991c60bb57ffa08c
 =======
 >>>>>>> Màj software
+=======
+>>>>>>> Revert "Màj Software"
 
 .debug_str      0x0000000000000000    0x818f3
  .debug_str     0x0000000000000000    0x7b853 ./appli/main.o
