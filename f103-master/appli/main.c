@@ -14,6 +14,9 @@
 #include "systick.h"
 #include "servo.h"
 #include "stm32f1_adc.h"
+#include "potentiometre.h"
+
+#define ADC_SENSOR_CHANNEL		ADC_1
 
 void writeLED(bool_e b)
 {
@@ -24,6 +27,7 @@ bool_e readButton(void)
 {
 	return !HAL_GPIO_ReadPin(BLUE_BUTTON_GPIO, BLUE_BUTTON_PIN);
 }
+
 
 static volatile uint32_t t = 0;
 void process_ms(void)
@@ -38,6 +42,8 @@ int main(void)
 	//Initialisation de la couche logicielle HAL (Hardware Abstraction Layer)
 	//Cette ligne doit rester la première étape de la fonction main().
 	HAL_Init();
+
+	ADC_init();
 
 	//Initialisation de l'UART2 à la vitesse de 115200 bauds/secondes (92kbits/s) PA2 : Tx  | PA3 : Rx.
 		//Attention, les pins PA2 et PA3 ne sont pas reliées jusqu'au connecteur de la Nucleo.
@@ -55,19 +61,16 @@ int main(void)
 
 	//On ajoute la fonction process_ms à la liste des fonctions appelées automatiquement chaque ms par la routine d'interruption du périphérique SYSTICK
 	Systick_add_callback_function(&process_ms);
-
-
-
-
+//	test();
 	SERVO_init();
-	ADC_init();
-
-
-	while(1)	//boucle de tâche de fond
-	{
-		n = ADC_getValue(ADC_CHANNEL_10)
-		print(n);
-		}
+	static int16_t value = 10;
+	while(1){
+		//int16_t value = (ADC_getValue(ADC_SENSOR_CHANNEL) - 1150) * 100 / 1670;
+		value = smooth_potentiometer(value);
+		SERVO_main(value);
 
 	}
 }
+
+
+
