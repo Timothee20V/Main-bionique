@@ -1,5 +1,5 @@
 /*
- * secretary.c
+ * servo.c
  *
  *  Created on: 28 mars 2019
  *      Author: Nirgal
@@ -12,38 +12,28 @@
 
 #define PERIOD_TIMER 10 //ms
 
-Servo servo1 = {0, TIM_CHANNEL_1, TIMER1_ID};
-Servo servo2 = {0, TIM_CHANNEL_2, TIMER1_ID};
-Servo servo3 = {0, TIM_CHANNEL_3, TIMER1_ID};
-Servo servo4 = {0, TIM_CHANNEL_4, TIMER1_ID};
-Servo servo5 = {0, TIM_CHANNEL_1, TIMER4_ID};
 
 void SERVO_init2(Servo servo){
-	//initialisation et lancement du timer1 à une periode de 10 ms
+	//initialisation et lancement du timer1 ï¿½ une periode de 10 ms
 	TIMER_run_us(servo.timer, PERIOD_TIMER*1000, FALSE); //10000us = 10ms
 	//activation du signal PWM sur le canal 1 du timer 1 (broche PA8)
 	TIMER_enable_PWM(servo.timer, servo.channel, 150, FALSE, FALSE);
 	//rapport cyclique regle pour une position servo de 50
-	SERVO_set_position(50, servo);
+	SERVO_set_position(150, servo);
 
 }
 
-void SERVO_init(){
-	SERVO_init2(servo1);
-	SERVO_init2(servo2);
-	SERVO_init2(servo3);
-	SERVO_init2(servo4);
-	SERVO_init2(servo5);
-}
+
 
 void SERVO_set_position(int16_t position, Servo servo){
+
 	if(position > 0){
 		if(position > 100){
 			position = 100; //ecretage si l'utilisateur demande plus de 100
 		}
-		servo.current_position = position;
+		servo.current_position =position;
 
-		TIMER_set_duty(servo.timer,servo.channel, position + 100); //définit la position du servo
+		TIMER_set_duty(servo.timer,servo.channel, position + 100); //dÃ©finit la position du servo
 	}
 	else if(position < 0){
 		if(position < -100){
@@ -51,49 +41,53 @@ void SERVO_set_position(int16_t position, Servo servo){
 		}
 		servo.current_position = position;
 
-		TIMER_set_duty(servo.timer,servo.channel, position + 200); //définit la position du servo
+		TIMER_set_duty(servo.timer,servo.channel, position + 200); //dÃ©finit la position du servo
+	}
+	else{
+		TIMER_set_duty(servo.timer,servo.channel, position + 100);
 	}
 }
+
 
 uint16_t SERVO_get_position(Servo servo){
 	return servo.current_position;
 }
 
-void SERVO_main(int16_t position){
+uint16_t capteurDelta(Capteur capt){
+	return capt.max - capt.min;
+}
+
+void SERVO_main(Capteur capt, Servo servo){
+
+	if(capteurDelta(capt) != 0){
+		capt.position = ((capt.value - capt.min) * 100) / capteurDelta(capt);
+
+		if (capt.position > 75){
+			SERVO_set_position(100, servo);
+		}
+
+		else if (capt.position < 25){
+			SERVO_set_position(-100, servo);
+		}
+
+		else{
+			SERVO_set_position(0, servo);
+		}
+	}
 	HAL_Delay(100);
-	SERVO_set_position(position, servo1);
-	SERVO_set_position((-position), servo2);
-	SERVO_set_position((-position), servo3);
-	SERVO_set_position(position, servo4);
-	SERVO_set_position(position, servo5);
 }
 
+void SERVO_main_inverse(int16_t position, Servo servo){
 
-void test(void){
-	SERVO_set_position(50, servo1);
-	HAL_Delay(1000);
-	SERVO_set_position(50, servo2);
-	HAL_Delay(1000);
-	SERVO_set_position(50, servo3);
-	HAL_Delay(1000);
-	SERVO_set_position(50, servo4);
-	HAL_Delay(1000);
-	SERVO_set_position(50, servo5);
+	if (position > 900){
+		SERVO_set_position(-100, servo);
+	}
+	else if (position < 900 && position>550){
+		SERVO_set_position(50, servo);
+	}
+
+	else if (position<550){
+		SERVO_set_position(100, servo);
+	}
+	HAL_Delay(100);
 }
-
-//void SERVO_process_test(void){
-//	static uint16_t position = 50;
-//	static bool_e previous_button = FALSE;
-//	bool_e current_button;
-//	//lecture du bouton bleu
-//	current_button = !HAL_GPIO_ReadPin(BLUE_BUTTON_GPIO, BLUE_BUTTON_PIN);
-//	if(current_button && !previous_button) //si appui bouton
-//	{
-//	position = (position > 99)?0:(position+5); //de 0 à 100, par pas de 5
-//	SERVO_set_position(position);
-//	}
-//	previous_button = current_button; //sauvegarde pour le prochain passage
-//	HAL_Delay(10); //anti-rebond de fortune en cadencant la lecture du bouton
-//}
-
-

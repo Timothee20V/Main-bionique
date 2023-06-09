@@ -10,8 +10,8 @@
 #include "stm32f1xx_hal.h"
 
 //Choix de la cible utilisée.
-#define NUCLEO	1
-#define BLUEPILL 0
+#define NUCLEO	0
+#define BLUEPILL 1
 
 #define MY_BLUEPILL_IS_COUNTERFEIT	BLUEPILL
 
@@ -70,13 +70,13 @@
 	//2 entrées analogiques doivent être activées minimum. (Vref est un choix possible si vous utilisez une seule entrée)
 	#define USE_AN0			1	//Broche correspondante : PA0
 	#define USE_AN1			1	//Broche correspondante : PA1
-	#define USE_AN2			0	//Broche correspondante : PA2	//Sur la Nucleo, cette broche n'est pas câblée !
-	#define USE_AN3			0	//Broche correspondante : PA3	//Sur la Nucleo, cette broche n'est pas câblée !
+	#define USE_AN2			1	//Broche correspondante : PA2	//Sur la Nucleo, cette broche n'est pas câblée !
+	#define USE_AN3			1	//Broche correspondante : PA3	//Sur la Nucleo, cette broche n'est pas câblée !
 	#define USE_AN4			0	//Broche correspondante : PA4
 	#define USE_AN5			0	//Broche correspondante : PA5
 	#define USE_AN6			0	//Broche correspondante : PA6
 	#define USE_AN7			0	//Broche correspondante : PA7
-	#define USE_AN8			0	//Broche correspondante : PB0
+	#define USE_AN8			1	//Broche correspondante : PB0
 	#define USE_AN9			0	//Broche correspondante : PB1
 	#define USE_AN10		0	//Broche correspondante : PC0	//Sur la Bluepill, cette broche n'est pas câblée !
 	#define USE_AN11		0	//Broche correspondante : PC1	//Sur la Bluepill, cette broche n'est pas câblée !
@@ -92,7 +92,7 @@
 	#if USE_SCREEN_TFT_ILI9341
 		#define USE_XPT2046			1	//Tactile
 
-		#define USE_FONT11x18		0
+		#define USE_FONT11x18		1
 		#define USE_FONT7x10		1
 		#define USE_FONT16x26		0
 
@@ -140,7 +140,6 @@
 #define USE_MOTOR_DC			0
 #define USE_STEPPER_MOTOR		0
 #define USE_RTC					0
-#define USE_PWM					0
 #define USE_ESP8266				0//Module Wifi
 #define USE_NFC03A1				0
 #define USE_EPAPER				0
@@ -153,6 +152,7 @@
 #define USE_IR_RECEIVER_NEC		0
 #define USE_DS18B20				0
 #define USE_MIDI				0
+#define USE_PS2_KEYBOARD		0
 #define	USE_VL53L0				0
 #if USE_VL53L0
 	#define VL53L0X_I2C				I2C1
@@ -188,7 +188,7 @@
 	#endif
 #endif
 #define I2C_TIMEOUT				5	//ms
-
+#define I2C_ON_MULTIPLE_PINS	0	//astuce permettant de rediriger à la demande le bus I2C vers les broches de remap. Réservé aux utilisateurs avertis.
 
 //Liste des modules utilisant le périphérique SPI
 #if USE_SCREEN_TFT_ILI9341	|| USE_SD_CARD
