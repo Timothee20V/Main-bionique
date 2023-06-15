@@ -1,11 +1,15 @@
 /**
   ******************************************************************************
   * @file    main.c
-  * @author  Nirgal
-  * @date    03-July-2019
-  * @brief   Default main function.
+  * @brief   Fonction principale.
+  * @author  Clémence MAIGNAN - Timothée VIARD
+  * @date    09 mars 2023
   ******************************************************************************
-*/
+  */
+
+/**
+  * @brief  Inclusion des bibliothèques
+  */
 #include "stm32f1xx_hal.h"
 #include "stm32f1_uart.h"
 #include "stm32f1_sys.h"
@@ -17,12 +21,18 @@
 #include "display.h"
 #include "stdbool.h"
 
+/**
+  * @brief  Inclusion des bibliothèques
+  */
 #define ADC_SENSOR_CHANNEL_0		ADC_0
 #define ADC_SENSOR_CHANNEL_1		ADC_1
 #define ADC_SENSOR_CHANNEL_2		ADC_2
 #define ADC_SENSOR_CHANNEL_3		ADC_3
 #define ADC_SENSOR_CHANNEL_4		ADC_8
 
+/**
+  * @brief  Définition des couleurs
+  */
 typedef enum {
 	white = 0xFFFF,
 	black = 0x0000,
@@ -31,6 +41,9 @@ typedef enum {
 	green = 0x07E0
 } Color;
 
+/**
+  * @brief  Définition des doigts
+  */
 typedef enum {
 	pouce = 4,
 	indexD = 6,
@@ -39,18 +52,27 @@ typedef enum {
 	auriculaire = 12
 } Doigt;
 
-Servo servo1 = {0, TIM_CHANNEL_1, TIMER1_ID};
-Servo servo2 = {0, TIM_CHANNEL_2, TIMER1_ID};
-Servo servo3 = {0, TIM_CHANNEL_3, TIMER1_ID};
-Servo servo4 = {0, TIM_CHANNEL_4, TIMER1_ID};
-Servo servo5 = {0, TIM_CHANNEL_1, TIMER4_ID};
+/**
+  * @brief  Définition des objets Servo
+  */
+Servo servo1 = {0, TIM_CHANNEL_1, TIMER1_ID, 0, 200, 75};
+Servo servo2 = {0, TIM_CHANNEL_2, TIMER1_ID, 0, 225, 60};
+Servo servo3 = {0, TIM_CHANNEL_3, TIMER1_ID, 0, 225, 60};
+Servo servo4 = {0, TIM_CHANNEL_4, TIMER1_ID, 1, 75, 260};
+Servo servo5 = {0, TIM_CHANNEL_1, TIMER4_ID, 1, 60, 225};
 
+/**
+  * @brief  Définition des objets Capteur
+  */
 Capteur capt1 = {0, 0, 0, 0};
 Capteur capt2 = {0, 0, 0, 0};
 Capteur capt3 = {0, 0, 0, 0};
 Capteur capt4 = {0, 0, 0, 0};
 Capteur capt5 = {0, 0, 0, 0};
 
+/**
+  * @brief  Fonction de traitement des millisecondes
+  */
 static volatile uint32_t t = 0;
 void process_ms(void)
 {
@@ -58,6 +80,9 @@ void process_ms(void)
 		t--;
 }
 
+/**
+  * @brief  Fonction de traitement des millisecondes
+  */
 void initScreen(void){
 	TFT_LineBreak();
 	TFT_Print_CenterAligned("Etat de la main", false, red);
@@ -75,7 +100,12 @@ void initScreen(void){
 	TFT_LineBreak();
 }
 
-void udapteValue(void)
+/**
+  * @brief Définition de la position du capteur
+  * @param capt Le capteur dont on souhaite définir la position
+  * @return Le capteur avec la position mise à jour
+  */
+void updateValue(void)
 {
 	char str[12];
 	sprintf(str, "%d", capt1.position);
@@ -95,6 +125,9 @@ void udapteValue(void)
 	TFT_Print_RightAligned(str, false, black);
 }
 
+/**
+  * @brief  Initialisation des capteurs
+  */
 void capteurInit(void){
 	capt1.max = ADC_getValue(ADC_1);
 	capt2.max = ADC_getValue(ADC_0);
@@ -109,6 +142,11 @@ void capteurInit(void){
 	capt5.min = ADC_getValue(ADC_8);
 }
 
+/**
+  * @brief Définition de la position du capteur
+  * @param capt Le capteur dont on souhaite définir la position
+  * @return Le capteur avec la position mise à jour
+  */
 Capteur defCapteurPosition(Capteur capt){
 	if(capt.value < capt.min){
 		capt.min = capt.value;
@@ -122,6 +160,9 @@ Capteur defCapteurPosition(Capteur capt){
 	return capt;
 }
 
+/**
+  * @brief  Fonction principale
+  */
 int main(void)
 {
 	//Initialisation de la couche logicielle HAL (Hardware Abstraction Layer)
@@ -150,11 +191,11 @@ int main(void)
 	initScreen();
 	capteurInit();
 
-	SERVO_init2(servo1);
-	SERVO_init2(servo2);
-	SERVO_init2(servo3);
-	SERVO_init2(servo4);
-	SERVO_init2(servo5);
+	SERVO_init(servo1);
+	SERVO_init(servo2);
+	SERVO_init(servo3);
+	SERVO_init(servo4);
+	SERVO_init(servo5);
 
 
 	while(1){
@@ -176,10 +217,9 @@ int main(void)
 		SERVO_main(capt4, servo4);
 		SERVO_main(capt5, servo5);
 
-		udapteValue();
+		updateValue();
 
 		HAL_Delay(50);
-		//TODO Bouton stop & Reprendre ? Pour les capteurs de flexion
 
 	}
 }
